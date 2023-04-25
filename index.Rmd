@@ -1,0 +1,25 @@
+--- 
+title: "PROYECCIÓN DE SALDOS DE PRODUCTOS DE CAPTACIONES EN ENTIDAD BANCARIA"
+author: "Carlos Alberto León Gil - Mauricio Pinzón Cortes"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "Proyecto predicción de saldos"
+---
+
+# Contexto
+
+Actualmente los diversos productos financieros administrados en la compañía bancaria deben contar con diversos mecanismos de estimación que permitan mitigar los riesgos financieros asociados, por ello se plantea esta propuesta con el objetivo de identificar la relevancia de las diversas variables contempladas de negocio que permitan una estimación precisa y de alta confiabilidad. La entidad bancaria y la dirección de Business Intelligence son los principales afectados con la incertidumbre, la cual se asume debido a que no se cuentan con métodos de estimación a partir de los comportamientos históricos de los clientes, con la cual se permita proyectar los saldos en los siguientes periodos que permitan tomar decisiones estratégicas y de valor para los diversos productos administrados.
+
+# Descripción de los datos 
+
+Existen multitud de registros y atributos para el procesamiento dentro de las bases de datos transaccionales en la entidad banacaria, sin embargo, dentro de las consideraciones y delimitación de la propuesta se realizaron actividades primarias que se relacionan con el descubrimiento de las principales fuentes de información necesarias para el desarrollo de predicción de los saldos de productos de captación. 
+
+La mayoría de los tipos de valor de estos orígenes de datos se relacionan al detalle de los saldos y movimientos por cada cliente. Posterior a la actividad de investigación y descubrimiento de variables de interés, se realiza la selección de 44 variables numéricas con un total de 52,207 registros correspondientes a la transaccionalidad de 24 meses de clientes que poseen saldos mayor o igual a $100,000 COP al último día de cada mes, debido a las reglas de negocio que se establecen para la estimación de saldos a cierre. Si bien 24 de estas variables están relacionadas con el saldo final de cada cuenta al último día de cada mes, las 20 variables adicionales relacionan la descripción del cliente: edad, género, nivel educativo, estatus marital, personas a cargo, personas a cargo, tipo de vivienda, estrato.
+
+
